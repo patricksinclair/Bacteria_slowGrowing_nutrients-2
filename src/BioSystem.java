@@ -133,6 +133,51 @@ public class BioSystem {
 
 
 
+    public static void antibioticVsNutrients(){
+
+        int nPoints = 25, nReps = 10, counter = 0;
+        int L = 500, K = 100;
+        double duration = 500.;
+        String filename = "fastGrowers_nutrients_vs_antibiotic";
+
+        ArrayList<Double> sVals = new ArrayList<>();
+        ArrayList<Double> cVals = new ArrayList<>();
+        ArrayList<Double> popVals = new ArrayList<>();
+
+        int initS = 10, finalS = 1000;
+        int sIncrement = (int)((finalS - initS)/(double)nPoints);
+
+        double initC = 0., finalC = 10;
+        double cIncrement = (finalC - initC)/(double)nPoints;
+
+
+        for(int s = initS; s <= finalS; s += sIncrement){
+            sVals.add((double)s);
+
+            for(double c = initC; c <= finalC; c += cIncrement){
+                cVals.add(c);
+
+                double avgMaxPopulation = 0.;
+
+                for(int r = 0; r < nReps; r++){
+                    BioSystem bs = new BioSystem(L, K, s, c);
+
+                    while(bs.getTimeElapsed() <= duration){
+                        bs.performAction();
+                    }
+
+                    avgMaxPopulation+=bs.getCurrentPopulation();
+                    System.out.println("counter: "+counter+"\t rep: "+r);
+                }
+
+                popVals.add(avgMaxPopulation/(double)nReps);
+            }
+            counter++;
+        }
+
+        Toolbox.writeContoursToFile(sVals, cVals, popVals, filename);
+    }
+
 
 
 
