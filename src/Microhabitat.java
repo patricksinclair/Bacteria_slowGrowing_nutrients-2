@@ -14,6 +14,7 @@ public class Microhabitat {
 
     public Microhabitat(int K, double c, int S){
         this.K = K;
+        this.c = c;
         this.s = S;
         this.s_max = S;
         this.population = new ArrayList<Bacteria>(K);

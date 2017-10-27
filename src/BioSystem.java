@@ -26,7 +26,7 @@ public class BioSystem {
         this.timeElapsed = 0.;
 
         for(int i = 0; i < L; i++){
-            microhabitats[i] = new Microhabitat(K, c, s);
+            microhabitats[i] = new Microhabitat(K, c, S);
         }
         microhabitats[0].fillWithWildType();
     }
@@ -135,14 +135,14 @@ public class BioSystem {
 
     public static void antibioticVsNutrients(){
 
-        int nPoints = 25, nReps = 10, counter = 0;
+        int nPoints = 10, nReps = 5;
         int L = 500, K = 100;
         double duration = 500.;
         String filename = "fastGrowers_nutrients_vs_antibiotic";
 
-        ArrayList<Double> sVals = new ArrayList<>();
-        ArrayList<Double> cVals = new ArrayList<>();
-        ArrayList<Double> popVals = new ArrayList<>();
+        ArrayList<Double> sVals = new ArrayList<Double>();
+        ArrayList<Double> cVals = new ArrayList<Double>();
+        ArrayList<Double> popVals = new ArrayList<Double>();
 
         int initS = 10, finalS = 1000;
         int sIncrement = (int)((finalS - initS)/(double)nPoints);
@@ -162,26 +162,19 @@ public class BioSystem {
                 for(int r = 0; r < nReps; r++){
                     BioSystem bs = new BioSystem(L, K, s, c);
 
-                    while(bs.getTimeElapsed() <= duration){
+                    while(bs.getTimeElapsed() <= duration && !bs.getPopulationDead()){
                         bs.performAction();
                     }
 
                     avgMaxPopulation+=bs.getCurrentPopulation();
-                    System.out.println("counter: "+counter+"\t rep: "+r);
+                    System.out.println("sVal: "+s+"\t cVal: "+ c+"\t rep: "+r);
                 }
 
                 popVals.add(avgMaxPopulation/(double)nReps);
             }
-            counter++;
         }
-
         Toolbox.writeContoursToFile(sVals, cVals, popVals, filename);
     }
-
-
-
-
-
 
 
 }
