@@ -143,14 +143,28 @@ public class BioSystem {
         ArrayList<Double> sVals = new ArrayList<Double>();
         ArrayList<Double> cVals = new ArrayList<Double>();
         ArrayList<Double> popVals = new ArrayList<Double>();
+        ArrayList<Double> maxPopVals = new ArrayList<Double>();
 
         int initS = 10, finalS = 1000;
         int sIncrement = (int)((finalS - initS)/(double)nPoints);
 
-        double initC = 0., finalC = 10;
+        double initC = 0., finalC = 10, zerothC = 0.;
         double cIncrement = (finalC - initC)/(double)nPoints;
 
+        for(int s = initS; s<=finalS; s+=sIncrement){
 
+            double avgMaxPopulation = 0.;
+
+            for(int r = 0; r < nReps; r++){
+                BioSystem bs = new BioSystem(L, K, s, zerothC);
+
+                while(bs.getTimeElapsed() <= duration && !bs.getPopulationDead()) bs.performAction();
+                avgMaxPopulation += bs.getCurrentPopulation();
+            }
+            maxPopVals.add(avgMaxPopulation/(double)nReps);
+        }
+
+        int indexCounter = 0;
         for(int s = initS; s <= finalS; s += sIncrement){
             sVals.add((double)s);
 
@@ -167,14 +181,14 @@ public class BioSystem {
                     }
 
                     avgMaxPopulation+=bs.getCurrentPopulation();
+                    System.out.println(bs.getCurrentPopulation());
                     System.out.println("sVal: "+s+"\t cVal: "+ c+"\t rep: "+r);
                 }
 
-                popVals.add(avgMaxPopulation/(double)nReps);
+                popVals.add(avgMaxPopulation/((double)nReps*maxPopVals.get(indexCounter)));
             }
+            indexCounter++;
         }
         Toolbox.writeContoursToFile(sVals, cVals, popVals, filename);
     }
-
-
 }
