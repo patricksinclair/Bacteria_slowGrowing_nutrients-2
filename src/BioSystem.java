@@ -6,7 +6,7 @@ public class BioSystem {
     //no. of habitats, "carrying capacity", no. of nutrients present initially in each habitat
     private int L, K, s, s_max;
 
-    private double c, timeElapsed;
+    private double c, alpha, timeElapsed;
 
     private boolean populationDead = false;
 
@@ -14,19 +14,21 @@ public class BioSystem {
 
     Random rand = new Random();
 
-    public BioSystem(int L, int K, int S, double c){
+    public BioSystem(int L, int K, int S, double alpha){
 
         this.L = L;
         this.K = K;
         this.s = S;
         this.s_max = S;
-        this.c = c;
+        this.alpha = alpha;
 
         this.microhabitats = new Microhabitat[L];
         this.timeElapsed = 0.;
 
         for(int i = 0; i < L; i++){
-            microhabitats[i] = new Microhabitat(K, c, S);
+
+            double c_i = Math.exp(alpha*(double)i) - 1.;
+            microhabitats[i] = new Microhabitat(K, c_i, S);
         }
         microhabitats[0].fillWithWildType();
     }
@@ -55,10 +57,20 @@ public class BioSystem {
 
     public void migrate(int currentL, int bacteriumIndex){
 
-        if(currentL < (L-1)){
+        double direction = rand.nextDouble();
+
+        if(direction < 0.5 && currentL < (L - 1)) {
+
 
             ArrayList<Bacteria> source = microhabitats[currentL].getPopulation();
             ArrayList<Bacteria> destination = microhabitats[currentL + 1].getPopulation();
+
+            destination.add(source.remove(bacteriumIndex));
+
+        }else if(direction > 0.5 && currentL > (0)){
+
+            ArrayList<Bacteria> source = microhabitats[currentL].getPopulation();
+            ArrayList<Bacteria> destination = microhabitats[currentL - 1].getPopulation();
 
             destination.add(source.remove(bacteriumIndex));
         }
@@ -191,4 +203,71 @@ public class BioSystem {
         }
         Toolbox.writeContoursToFile(sVals, cVals, popVals, filename);
     }
+
+
+
+    public static void antibioticGradientVsNutrients(){
+
+        int nPoints = 10, nReps = 5;
+        int L = 500, K = 100;
+        double duration = 500.;
+        String filename = "gradVsNutrientsScaled", token = "bla";
+
+        ArrayList<Double> sVals = new ArrayList<Double>();
+        ArrayList<Double> alphaVals = new ArrayList<Double>();
+        ArrayList<Double> popVals = new ArrayList<Double>();
+        ArrayList<Double> maxPopVals = new ArrayList<Double>();
+
+        int initS = 10, finalS = 1000;
+        int sIncrement = ((finalS - initS)/nPoints);
+
+        double initAlpha = 0.01, finalAlpha = 0.1, zerothAlpha = 0.;
+        double alphaIncrement = (finalAlpha - initAlpha)/(double)nPoints;
+
+        //this loop runs with no antibiotics to calculate the maximum value attainable for each nutrient
+        //value
+        for(int s = initS; s<=finalS; s+=sIncrement){
+
+            double avgMaxPopulation = 0.;
+
+            for(int r = 0; r < nReps; r++){
+                System.out.println("zerothS = "+s+"\trep: "+r);
+                BioSystem bs = new BioSystem(L, K, s, zerothAlpha);
+
+                while(bs.getTimeElapsed() <= duration && !bs.getPopulationDead()) bs.performAction();
+                avgMaxPopulation += bs.getCurrentPopulation();
+            }
+            maxPopVals.add(avgMaxPopulation/(double)nReps);
+        }
+
+
+        int indexCounter = 0;
+        for(int s = initS; s <= finalS; s += sIncrement) {
+            sVals.add((double)s);
+
+            for(double alpha = initAlpha; alpha <= finalAlpha; alpha += alphaIncrement) {
+                alphaVals.add(alpha);
+
+                double avgMaxPopulation = 0.;
+
+                for(int r = 0; r < nReps; r++) {
+
+                    BioSystem bs = new BioSystem(L, K, s, alpha);
+
+                    while(bs.getTimeElapsed() <= duration && !bs.getPopulationDead()) bs.performAction();
+
+
+                    avgMaxPopulation += bs.getCurrentPopulation();
+                    System.out.println(bs.getCurrentPopulation());
+                    System.out.println("sVal: " + s + "\t alphaVal: " + alpha + "\t rep: " + r);
+                }
+
+                popVals.add(avgMaxPopulation/((double)nReps*maxPopVals.get(indexCounter)));
+
+            }
+            indexCounter++;
+        }
+        Toolbox.writeContoursToFile(sVals, alphaVals, popVals, filename);
+    }
+
 }
