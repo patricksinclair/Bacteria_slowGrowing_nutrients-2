@@ -281,7 +281,7 @@ public class BioSystem {
 
 
 
-        BioSystem lbs = new BioSystem(L, K, S, alpha;
+        BioSystem lbs = new BioSystem(L, K, S, alpha);
 
         while(lbs.getTimeElapsed() <= duration && !lbs.getPopulationDead()){
             lbs.performAction();
