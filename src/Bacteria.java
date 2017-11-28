@@ -29,10 +29,12 @@ public class Bacteria {
     //s = no. of nutrients, s_max =  max no. of nutrients present at the start
     public double beta(double s, double s_max, double K){
 
-        double mu = s/(K+s);
+        /*double mu = s/(K+s);
         double mu_max = s_max/(K+s_max);
 
-        return 1. + 9.*mu/mu_max;
+        return 1. + 9.*mu/mu_max;*/
+        //this change was made for flat growing bacteria
+        return 5.;
     }
 
     public double growthRate(double c, double s, double s_max, double K){

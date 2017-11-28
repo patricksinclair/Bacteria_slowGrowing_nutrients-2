@@ -271,7 +271,7 @@ public class BioSystem {
         int S = 500;
         double duration = 2000;
 
-        String filename = "slowGrowers-alpha-"+String.valueOf(alpha)+"-spatialDistribution";
+        String filename = "flatGrowers-alpha-"+String.valueOf(alpha)+"-spatialDistribution";
         boolean alreadyRecorded = false;
 
         ArrayList<Double> xVals = new ArrayList<>(L);
