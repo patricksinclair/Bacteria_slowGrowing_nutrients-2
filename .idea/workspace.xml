@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd34b767-4912-4254-8166-1b8dbf5fb7cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bacteria.java" afterPath="$PROJECT_DIR$/src/Bacteria.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BioSystem.java" afterPath="$PROJECT_DIR$/src/BioSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Microhabitat.java" afterPath="$PROJECT_DIR$/src/Microhabitat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SlowBacMain.java" afterPath="$PROJECT_DIR$/src/SlowBacMain.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,18 +20,18 @@
       <file leaf-file-name="SlowBacMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SlowBacMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+            <state relative-caret-position="0">
+              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bacteria.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bacteria.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bacteria.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="185">
+              <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -39,28 +40,30 @@
       <file leaf-file-name="Microhabitat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Microhabitat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="779">
+              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BioSystem.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BioSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BioSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="273" column="31" lean-forward="false" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
+            <state relative-caret-position="-2389">
+              <caret line="223" column="31" lean-forward="false" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5052#5060#0" expanded="true" />
-                <element signature="e#5111#5119#0" expanded="true" />
-                <element signature="e#5172#5180#0" expanded="true" />
-                <element signature="e#5236#5244#0" expanded="true" />
-                <element signature="e#7196#7204#0" expanded="true" />
-                <element signature="e#7259#7267#0" expanded="true" />
-                <element signature="e#7320#7328#0" expanded="true" />
-                <element signature="e#7384#7392#0" expanded="true" />
+                <element signature="e#6527#6535#0" expanded="true" />
+                <element signature="e#6586#6594#0" expanded="true" />
+                <element signature="e#6647#6655#0" expanded="true" />
+                <element signature="e#8134#8142#0" expanded="true" />
+                <element signature="e#8197#8205#0" expanded="true" />
+                <element signature="e#8258#8266#0" expanded="true" />
+                <element signature="e#8322#8330#0" expanded="true" />
+                <element signature="e#11308#11316#0" expanded="true" />
+                <element signature="e#11371#11379#0" expanded="true" />
+                <element signature="e#11430#11438#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,12 +113,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Microhabitat.java" />
         <option value="$PROJECT_DIR$/src/Toolbox.java" />
         <option value="$PROJECT_DIR$/src/FastBacMain.java" />
         <option value="$PROJECT_DIR$/src/LinearBioSystem.java" />
         <option value="$PROJECT_DIR$/src/SlowBacMain.java" />
         <option value="$PROJECT_DIR$/src/Bacteria.java" />
+        <option value="$PROJECT_DIR$/src/Microhabitat.java" />
         <option value="$PROJECT_DIR$/src/BioSystem.java" />
       </list>
     </option>
@@ -522,14 +525,16 @@
           <caret line="208" column="3" lean-forward="false" selection-start-line="208" selection-start-column="3" selection-end-line="255" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5052#5060#0" expanded="true" />
-            <element signature="e#5111#5119#0" expanded="true" />
-            <element signature="e#5172#5180#0" expanded="true" />
-            <element signature="e#5236#5244#0" expanded="true" />
-            <element signature="e#7196#7204#0" expanded="true" />
-            <element signature="e#7259#7267#0" expanded="true" />
-            <element signature="e#7320#7328#0" expanded="true" />
-            <element signature="e#7384#7392#0" expanded="true" />
+            <element signature="e#6527#6535#0" expanded="true" />
+            <element signature="e#6586#6594#0" expanded="true" />
+            <element signature="e#6647#6655#0" expanded="true" />
+            <element signature="e#8134#8142#0" expanded="true" />
+            <element signature="e#8197#8205#0" expanded="true" />
+            <element signature="e#8258#8266#0" expanded="true" />
+            <element signature="e#8322#8330#0" expanded="true" />
+            <element signature="e#11308#11316#0" expanded="true" />
+            <element signature="e#11371#11379#0" expanded="true" />
+            <element signature="e#11430#11438#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -564,14 +569,16 @@
           <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5052#5060#0" expanded="true" />
-            <element signature="e#5111#5119#0" expanded="true" />
-            <element signature="e#5172#5180#0" expanded="true" />
-            <element signature="e#5236#5244#0" expanded="true" />
-            <element signature="e#7196#7204#0" expanded="true" />
-            <element signature="e#7259#7267#0" expanded="true" />
-            <element signature="e#7320#7328#0" expanded="true" />
-            <element signature="e#7384#7392#0" expanded="true" />
+            <element signature="e#6527#6535#0" expanded="true" />
+            <element signature="e#6586#6594#0" expanded="true" />
+            <element signature="e#6647#6655#0" expanded="true" />
+            <element signature="e#8134#8142#0" expanded="true" />
+            <element signature="e#8197#8205#0" expanded="true" />
+            <element signature="e#8258#8266#0" expanded="true" />
+            <element signature="e#8322#8330#0" expanded="true" />
+            <element signature="e#11308#11316#0" expanded="true" />
+            <element signature="e#11371#11379#0" expanded="true" />
+            <element signature="e#11430#11438#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -626,14 +633,16 @@
           <caret line="149" column="38" lean-forward="false" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5052#5060#0" expanded="true" />
-            <element signature="e#5111#5119#0" expanded="true" />
-            <element signature="e#5172#5180#0" expanded="true" />
-            <element signature="e#5236#5244#0" expanded="true" />
-            <element signature="e#7196#7204#0" expanded="true" />
-            <element signature="e#7259#7267#0" expanded="true" />
-            <element signature="e#7320#7328#0" expanded="true" />
-            <element signature="e#7384#7392#0" expanded="true" />
+            <element signature="e#6527#6535#0" expanded="true" />
+            <element signature="e#6586#6594#0" expanded="true" />
+            <element signature="e#6647#6655#0" expanded="true" />
+            <element signature="e#8134#8142#0" expanded="true" />
+            <element signature="e#8197#8205#0" expanded="true" />
+            <element signature="e#8258#8266#0" expanded="true" />
+            <element signature="e#8322#8330#0" expanded="true" />
+            <element signature="e#11308#11316#0" expanded="true" />
+            <element signature="e#11371#11379#0" expanded="true" />
+            <element signature="e#11430#11438#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,14 +688,16 @@
           <caret line="149" column="39" lean-forward="false" selection-start-line="149" selection-start-column="39" selection-end-line="149" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5052#5060#0" expanded="true" />
-            <element signature="e#5111#5119#0" expanded="true" />
-            <element signature="e#5172#5180#0" expanded="true" />
-            <element signature="e#5236#5244#0" expanded="true" />
-            <element signature="e#7196#7204#0" expanded="true" />
-            <element signature="e#7259#7267#0" expanded="true" />
-            <element signature="e#7320#7328#0" expanded="true" />
-            <element signature="e#7384#7392#0" expanded="true" />
+            <element signature="e#6527#6535#0" expanded="true" />
+            <element signature="e#6586#6594#0" expanded="true" />
+            <element signature="e#6647#6655#0" expanded="true" />
+            <element signature="e#8134#8142#0" expanded="true" />
+            <element signature="e#8197#8205#0" expanded="true" />
+            <element signature="e#8258#8266#0" expanded="true" />
+            <element signature="e#8322#8330#0" expanded="true" />
+            <element signature="e#11308#11316#0" expanded="true" />
+            <element signature="e#11371#11379#0" expanded="true" />
+            <element signature="e#11430#11438#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microhabitat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinearBioSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -742,37 +745,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BioSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="273" column="31" lean-forward="false" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5052#5060#0" expanded="true" />
-            <element signature="e#5111#5119#0" expanded="true" />
-            <element signature="e#5172#5180#0" expanded="true" />
-            <element signature="e#5236#5244#0" expanded="true" />
-            <element signature="e#7196#7204#0" expanded="true" />
-            <element signature="e#7259#7267#0" expanded="true" />
-            <element signature="e#7320#7328#0" expanded="true" />
-            <element signature="e#7384#7392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SlowBacMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bacteria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        <state relative-caret-position="185">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Microhabitat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BioSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2389">
+          <caret line="223" column="31" lean-forward="false" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6527#6535#0" expanded="true" />
+            <element signature="e#6586#6594#0" expanded="true" />
+            <element signature="e#6647#6655#0" expanded="true" />
+            <element signature="e#8134#8142#0" expanded="true" />
+            <element signature="e#8197#8205#0" expanded="true" />
+            <element signature="e#8258#8266#0" expanded="true" />
+            <element signature="e#8322#8330#0" expanded="true" />
+            <element signature="e#11308#11316#0" expanded="true" />
+            <element signature="e#11371#11379#0" expanded="true" />
+            <element signature="e#11430#11438#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
