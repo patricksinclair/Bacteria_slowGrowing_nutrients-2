@@ -12,7 +12,7 @@ public class Bacteria {
     //death rate
     private double d = 0.;
     //mutation rate
-    private double mu = 1.e-5;
+    private double mu = 0.;
 
     public Bacteria(int m){
         this.m = m;
