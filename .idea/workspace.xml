@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd34b767-4912-4254-8166-1b8dbf5fb7cf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BioSystem.java" afterPath="$PROJECT_DIR$/src/BioSystem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SlowBacMain.java" afterPath="$PROJECT_DIR$/src/SlowBacMain.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/src/SlowBacMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -60,10 +61,20 @@
       <file leaf-file-name="BioSystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BioSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="415" column="40" lean-forward="false" selection-start-line="415" selection-start-column="40" selection-end-line="415" selection-end-column="40" />
+            <state relative-caret-position="190">
+              <caret line="359" column="34" lean-forward="false" selection-start-line="359" selection-start-column="34" selection-end-line="359" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#7806#7814#0" expanded="true" />
+                <element signature="e#7865#7873#0" expanded="true" />
+                <element signature="e#7926#7934#0" expanded="true" />
+                <element signature="e#9413#9421#0" expanded="true" />
+                <element signature="e#9476#9484#0" expanded="true" />
+                <element signature="e#9537#9545#0" expanded="true" />
+                <element signature="e#9601#9609#0" expanded="true" />
+                <element signature="e#13347#13355#0" expanded="true" />
+                <element signature="e#13410#13418#0" expanded="true" />
+                <element signature="e#13469#13477#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +137,8 @@
         <option value="$PROJECT_DIR$/src/LinearBioSystem.java" />
         <option value="$PROJECT_DIR$/src/Microhabitat.java" />
         <option value="$PROJECT_DIR$/src/Bacteria.java" />
-        <option value="$PROJECT_DIR$/src/BioSystem.java" />
         <option value="$PROJECT_DIR$/src/SlowBacMain.java" />
+        <option value="$PROJECT_DIR$/src/BioSystem.java" />
       </list>
     </option>
   </component>
@@ -538,6 +549,16 @@
           <caret line="364" column="40" lean-forward="false" selection-start-line="364" selection-start-column="40" selection-end-line="364" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,6 +626,16 @@
           <caret line="223" column="31" lean-forward="false" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,6 +703,16 @@
           <caret line="208" column="3" lean-forward="false" selection-start-line="208" selection-start-column="3" selection-end-line="255" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -719,6 +760,16 @@
           <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -786,6 +837,16 @@
           <caret line="149" column="38" lean-forward="false" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -831,6 +892,16 @@
           <caret line="149" column="39" lean-forward="false" selection-start-line="149" selection-start-column="39" selection-end-line="149" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -922,10 +993,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BioSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="415" column="40" lean-forward="false" selection-start-line="415" selection-start-column="40" selection-end-line="415" selection-end-column="40" />
+        <state relative-caret-position="190">
+          <caret line="359" column="34" lean-forward="false" selection-start-line="359" selection-start-column="34" selection-end-line="359" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7806#7814#0" expanded="true" />
+            <element signature="e#7865#7873#0" expanded="true" />
+            <element signature="e#7926#7934#0" expanded="true" />
+            <element signature="e#9413#9421#0" expanded="true" />
+            <element signature="e#9476#9484#0" expanded="true" />
+            <element signature="e#9537#9545#0" expanded="true" />
+            <element signature="e#9601#9609#0" expanded="true" />
+            <element signature="e#13347#13355#0" expanded="true" />
+            <element signature="e#13410#13418#0" expanded="true" />
+            <element signature="e#13469#13477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -933,7 +1014,7 @@
     <entry file="file://$PROJECT_DIR$/src/SlowBacMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
           <folding />
         </state>
       </provider>
