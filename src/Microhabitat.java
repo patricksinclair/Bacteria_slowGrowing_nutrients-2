@@ -12,8 +12,7 @@ public class Microhabitat {
     private ArrayList<Bacteria> population;
 
 
-    public Microhabitat(int K, double c, int S){
-        this.K = K;
+    public Microhabitat(double c, int S){
         this.c = c;
         this.s = S;
         this.s_max = S;
@@ -71,6 +70,16 @@ public class Microhabitat {
         for(int i = 0; i < K; i++){
             population.add(new Bacteria(initGenotype));
         }
+    }
+
+    public double getGrowthRate(){
+        double mu = s/(K_prime+s);
+        double mu_max = s_max/(K_prime+s_max);
+        double beta = 1. + 9.*(mu/mu_max);
+
+        double phi_c = Math.max(1. - (c/beta)*(c/beta), 0.);
+
+        return phi_c*(s/(K_prime+s));
     }
 
     public void consumeNutrients(){
